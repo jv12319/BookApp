@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './App.css'
 import Search from './Search'
+import BookDetails from './BookDetails';
 
 
 function App() {
@@ -9,13 +10,15 @@ function App() {
   const [error, setError] = useState("");
   const [search, setSearch] = useState("");
   const [searchResults, setSearchResults] = useState([]);
+  const [selectedBook, setSelectedBook] = useState(null);
+
 
 
   useEffect(() =>{
     fetch("https://openlibrary.org/search.json?q=javascript")
     .then((response) => response.json())
     .then((data)  => setData(data))
-    .then(() => setLoading())
+    .then(() => setLoading(false))
     .catch(setError);
 
   }, []);
@@ -32,6 +35,8 @@ function App() {
   if(!data) {
     return null;
   }
+
+  
 
   const searchHandler = (search) => {
     setSearch(search);
@@ -66,6 +71,8 @@ function App() {
                 <br></br>
                 <span style={{ color: 'red' }}>ID:</span>
                 {work.isbn[0]}
+                <br></br>
+                <button onClick={() => setSelectedBook(work)}>Details</button>
               </h4>
             </ol>
           ))}
@@ -85,11 +92,14 @@ function App() {
                 <br></br>
                 <span style={{ color: 'red' }}>ID:</span>
                 {work.isbn[0]}
+                <br></br>
+                <button onClick={() => setSelectedBook(work)}>Details</button>
               </h4>
             </ol>
           ))}
         </>
       )}
+      {selectedBook && <BookDetails book={selectedBook} />}
     </div>
   );
   
