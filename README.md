@@ -29,7 +29,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='[http://i.imgur.com/link/to/your/gif/file.gif](https://github.com/jv12319/BookApp/blob/main/web102project6Gif.gif)' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![GIF][(https://github.com/jv12319/BookApp/blob/main/web102project6Gif.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
