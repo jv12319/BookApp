@@ -29,7 +29,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![GIF][(https://github.com/jv12319/BookApp/blob/main/web102project6Gif.gif)
+![GIF](https://github.com/jv12319/BookApp/blob/main/web102project6Gif.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
