@@ -22,7 +22,8 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+- [x] List anything else that you added to improve the site's functionality!
+      I added an amazon link for each book displayed so users can purchase said book if interested.
 
 ## Video Walkthrough
 
